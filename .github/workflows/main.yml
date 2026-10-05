@@ -1,1 +1,18 @@
+# pipeline name/ workflow name
+name: first workflow
 
+# set trigger 
+on: 
+    push:
+        branches:
+            - main
+jobs: 
+    print-massage:
+        run-on: ubuntu-latest
+        steps:
+            # step1
+            - name: print welcome massage
+              run: echo 'welcome to github action'
+            # step2
+            - name: print hello massage
+              run: echo 'hello.....'
